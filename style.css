@@ -1,0 +1,196 @@
+
+.container{
+    display: flex;
+    align-items: center;
+}
+
+#clockContainer{
+    position: relative;
+    margin: auto;
+    height: 38vw;
+    width: 38vw;
+    background: url(clock.png) no-repeat;
+    background-size: 100%;
+    transition: all 0.5s ease-in-out 0.05s;
+    box-shadow: 5px 5px 70px black;
+    border-radius: 350px;
+}
+#clockContainer:hover{
+    
+    height: 44vw;
+    width: 44vw;
+    
+}
+
+#hour, #minute, #second{
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+
+#hour{
+    width: 1.3%;
+    height: 23%;
+    top: 27%;
+    left: 49.2%;
+    /* background: violet; */
+
+}
+
+#minute{
+    width: 0.8%;
+    height: 29%;
+    top: 21%;
+    left: 49.48%;
+    /* background: red; */
+
+}
+
+#second{
+    width: 0.5%;
+    height: 39%;
+    top: 11%;
+    left: 49.6%;
+    /* background: green; */
+
+
+}
+
+#date, #day{
+    background-color: black;
+    color: white;
+    width: 12vw;
+    height: 4vw;
+    position: absolute;
+    font-size: 1.3vw;
+    border-radius: 10px;
+    font-style: italic;
+    font-variant: small-caps;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out 0.05s;
+    box-shadow: 7px 7px 55px white}
+
+#date{
+    left: 73vw;
+    top: 4vw;
+   
+}
+#day{
+    left: 11vw;
+    top: 4vw;
+   
+}
+#date:hover, #day:hover{
+    width: 13vw;
+    height: 5vw;
+
+}
+
+/* Animation */
+
+.container{
+    width: 100vw;
+    position: absolute;
+    height: 47vw;
+    top: 0vw;
+    left: 0vw;
+    display: flex;
+    justify-content: center;
+    background-color: grey;
+}
+
+/* Left Right */
+.box1{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 20vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    animation: leftRight 5s ease-in-out infinite backwards;
+
+}
+.box2{
+    position: absolute;
+    top: 0vw;
+    right: 0vw;
+    width: 20vw;
+    height: 100%;
+    background-color: black;
+    opacity: 0.2;
+    animation: leftRight 5s ease-in-out 2.65s infinite backwards;
+
+}
+
+@keyframes leftRight {
+    0%{
+        left: 0px;
+        opacity: 0.2;
+    }
+
+    25%{
+        opacity: 0.1;
+    }
+    50%{
+        left: 79.9vw;
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.1;
+    }
+    100%{
+        left: 0vw;
+        opacity: 0.2;
+    }   
+}
+
+/* Top Down */
+.box3{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100vw;
+    height: 15vw;
+    background-color: black;
+    opacity: 0.2;
+    animation: topDown 5s ease-in-out 0s infinite backwards;
+
+}
+.box4{
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 100vw;
+    height: 15vw;
+    background-color: black;
+    opacity: 0.2;
+    animation: topDown 5s ease-in-out 2.4s infinite backwards;
+
+}
+
+@keyframes topDown {
+    0%{
+        top: 0px;
+        opacity: 0.2;
+    }
+
+    25%{
+        opacity: 0.1;
+    }
+    50%{
+        top: 31.7vw;
+        opacity: 0.1;
+    }
+    75%{
+        opacity: 0.1;
+    }
+    100%{
+        ltopeft: 0vw;
+        opacity: 0.2;
+    }   
+}
+
